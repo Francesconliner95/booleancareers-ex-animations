@@ -124,3 +124,59 @@
 				90% {-webkit-transform: rotate(269deg);}
                 100% {-webkit-transform: rotate(0deg);}
 }
+
+/*ESERCIZIO 12*/
+
+.ex-12-button:hover .ex-12-top-white {
+		animation-name: move-block-anim-top;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+        animation-name: move-block-anim-bottom;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes move-block-anim-top {
+        0%   {left:0px;}
+        50%  {left: calc(100% - 60px);}
+        100% {left:0px;}
+}
+
+@keyframes move-block-anim-bottom {
+        0%   {right:0px;}
+        50%  {right: calc(100% - 60px);}
+        100% {right:0px;}
+}
+
+/*ESERCIZIO 13*/
+
+.ex-13-button:hover .ex-13-top-white {
+		animation-name: move-block-anim-top2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+        animation-name: move-block-anim-bottom2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes move-block-anim-top2 {
+        0%   {left:0px; top:0px; transform: translate(-50%, -50%);}
+        25%  {left:100%; top:0px; transform: translate(-50%, -50%);}
+        50%  {left:100%; top:100%; transform: translate(-50%, -50%);}
+        75%  {left:0px; top:100%; transform: translate(-50%, -50%);}
+        100% {left:0px; top:0px; transform: translate(-50%, -50%);}
+}
+
+@keyframes move-block-anim-bottom2 {
+        0%   {left:100%; top:100%; transform: translate(-50%, -50%);}
+        25%  {left:0px; top:100%; transform: translate(-50%, -50%);}
+        50%  {left:0px; top:0px; transform: translate(-50%, -50%);}
+        75%  {left:100%; top:0px; transform: translate(-50%, -50%);}
+        100% {left:100%; top:100%; transform: translate(-50%, -50%);}
+}

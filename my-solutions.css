@@ -82,3 +82,45 @@
     filter: sepia(1);
     border-radius: 20%;
 }
+
+/*ESERCIZIO 9*/
+
+.ex-9-img:hover{
+    transition: all 3s;
+    filter: brightness(1);
+    filter: sepia(1);
+    border-radius: 20%;
+    transform: scale(.8);
+}
+
+/*ESERCIZIO 10*/
+
+/* .ex-10-icon{
+    transition: all 3s;
+    transform: rotate(360deg);
+} */
+
+.ex-10-icon {
+		-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+/*ESERCIZIO 11*/
+
+.ex-11-icon:hover {
+		-webkit-animation: rotation 2s linear;
+}
+
+@-webkit-keyframes rotation {
+				0% {-webkit-transform: rotate(0deg);}
+				90% {-webkit-transform: rotate(269deg);}
+                100% {-webkit-transform: rotate(0deg);}
+}
